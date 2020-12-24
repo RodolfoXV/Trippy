@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <title>Trippy | Contacto | Vive la experiencia</title>
+      <meta charset="utf8">
+      <meta name="description" content="While more tours, more Trippy.	Contactanos si te gusto alguno de nuestros tours | Formulario de informacion."> 
+      <meta name="keywords" content="TOURS, CONTACTO, RESERVAS, INFORMACION DE TOURS, BARHOPPING, AFTEROFICE, TRIPPY, CONOCE, RECORRIDOS, BUENOS, AIRES, NIGHLIFE, BAR, BARHOPPING, ARGENTINA"> 
+      <meta name="viewport" content="width=device-width"/>
+      <meta name="robots" content="index,follow" />
+      <meta http-equiv="expires" content="43200"/>
+         
+      <link rel="stylesheet" type="text/css" href="../estilos/bootstrap.min.css">
+      <link href="../estilos/normalize.css" rel="stylesheet">
+      <link href="../sass/styles.css" rel="stylesheet">
+      <link href="../estilos/iconos.css" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <header class="head__flex">
+         <div class="head__flex__divHeadSon"> 
+            <h1 class=""><a href="../index.html">TRIPPY<a class="fontLight">BA</a></a></h1>
+         </div>
+         <div class="head__flex__white"> 
+         </div>
+         <div class="head__flex__divHeadSon--nav">
+            <nav>
+               <ul>
+                  <li><a href="sec1.html">Quienes somos?</a></li>
+                  <li><a href="sec2.html">El servicio</a></li>
+                  <li><a href="sec3.html">Vive la experiencia</a></li>
+                  <li><a href="sec4.html">Anecdotas</a></li>
+                  <li><a href="sec5.html">Citytours</a></li>
+               </ul>
+            </nav>
+         </div>
+      </header>
+      <main>
+         <section class="container">
+            <h2>Estas a un paso de disfrutar esta experiencia inolvidable!</h2>
+            <p> Contactanos y nosotros haremos el resto</p>
+            <div class="main__form__flex py-3">
+               <div class="main__form__flex__div">
+                  <p>Motivo de consulta</p>
+                  <form name="contact_form" action="sec3response.html" method="POST">
+                     <select name="area" required id="form_area">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <option selected="selected" value="0">Seleccione...</option>
+                        <option value="I">Informacion</option>
+                        <option value="R">Reserva</option>
+                        <option value="CT">Citytours</option>
+                     </select> 
+                     <p>Genero</p>
+                     <input type="radio" name="gender" id="male" value="h" checked="checked">
+                     <label for="male">Hombre</label>
+                     <input type="radio" name="gender" id="mujer" value="m">
+                     <label for="mujer">Mujer</label>
+                     <input type="radio" name="gender" id="other" value="o">
+                     <label for="other">Otro</label>
+                     <br /><br /> 
+                     <label for="form_name">Nombre</label>
+                     <input type="text" name="nombre" id="form_nombre" required placeholder="Fernando"/>&nbsp;&nbsp;&nbsp;
+                     <label for="form_name">Apellido</label>&nbsp;&nbsp;
+                     <input type="text" name="apellido" id="form_apellido" required placeholder="Scodio"/>
+                     <br /><br />
+                     <label for="form_email">Email</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                     <input type="email" name="email" id="form_email" required placeholder="example@email.com"/>&nbsp;&nbsp;&nbsp;&nbsp;
+                     <label for="form_telefono">Telefono</label>
+                     <input type="tel" name="telefono" id="form_telefono" />
+                     <br /><br />
+               </div> 
+               <div class="main__form__flex__div"><br/><br/>
+               <span>¿Como nos conociste?</span>
+               <br /><br />
+               <input type="checkbox" name="facebook" id="form_facebook"/>
+               <label for="form_facebook">Facebook</label>
+               <input type="checkbox" name="instagram" id="form_instagram"  />
+               <label for="form_instagram">Instagram</label>
+               <input type="checkbox" name="web" id="form_web"/>
+               <label for="form_web">Web</label>
+               <input type="checkbox" name="otro" id="form_otro"/>
+               <label for="form_otro">Otro</label>
+               <br /><br />
+               <label for="form_mensaje">Comentario</label>
+               <textarea name="mensaje" id="form_mensaje" rows="3" cols="45"></textarea>
+               <!-- a implementar opcion me lo conto un amigo y ofrecer descuento por mail -->
+               <br /><br />
+               <br /><br />&nbsp;&nbsp;&nbsp;
+               <input type="submit" name="enviar_formulario" value="Enviar Mensaje" />&nbsp;&nbsp;&nbsp;&nbsp;
+               <input type="reset" name="borrar_formulario" value="Borrar Formulario" />
+               </form>
+               </div>
+            </div>
+         </section>
+         <br/><br/>
+         <hr>
+         <p>Mira los comentarios de quienes ya vivieron la experiencia (solo <a href="sec4.html">clickea aqui</a>)</p>
+         <hr>
+      </main>    
+      <footer class="navbar">
+         <section>
+            <div>
+               <h2>Seguinos en las redes</h2>
+               <nav>
+                  <a href="https://www.instagram.com/rodolfovcm/?hl=es-la" target="_blank"><i class="icon-instagram"></i></a>
+                  <a href="https://www.facebook.com/" target="_blank"><i class="icon-facebook-official"></i></a>
+                  <a href="https://www.youtube.com/watch?v=VDZHXX3tA4c" target="_blank"><i class="icon-youtube-play"></i></a>           
+               </nav>
+            </div>
+         </section>
+         <section>
+            <p>TRIPPY BA | Política de Privacidad | Todos los derechos reservados.</p>
+         </section>
+      </footer>
+   </body>
+</html>
