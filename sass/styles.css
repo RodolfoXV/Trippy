@@ -16,10 +16,10 @@ body {
 }
 
 header {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffcfa1), to(white));
-  background-image: linear-gradient(#ffcfa1, white);
-  border-bottom: dotted 5px #ac2d1c;
-  height: 100px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ddd6f3), to(#faaca8));
+  background: linear-gradient(to bottom, #ddd6f3, #faaca8);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: auto;
 }
 
 main {
@@ -30,10 +30,10 @@ main {
 }
 
 footer {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#ffcfa1));
-  background-image: linear-gradient(white, #ffcfa1);
+  background: -webkit-gradient(linear, left top, left bottom, from(#faaca8), to(#ddd6f3));
+  background: linear-gradient(to bottom, #faaca8, #ddd6f3);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   /*opacity: 0.6;*/
-  border-top: dotted 5px #ac2d1c;
   width: 100%;
   height: 200px;
 }
@@ -276,7 +276,7 @@ table {
 .main__servicios__grid {
   display: -ms-grid;
   display: grid;
-  grid-area: "WalkingTour WalkingTour WalkingTour" "BarTours BarTours BarTours" "AfterOficeTrip AfterOficeTrip AfterOficeTrip";
+  grid-area: "WalkingTour WalkingTour WalkingTour" "BarTours BarTours BarTours" "AfterOficeTrip AfterOficeTrip AfterOficeTrip";
   -ms-grid-rows: auto;
       grid-template-rows: auto;
   -ms-grid-columns: auto;
