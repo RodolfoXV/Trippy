@@ -16,6 +16,7 @@
       <link rel="preconnect" href="https://fonts.gstatic.com">
       <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Open+Sans:ital@1&display=swap" rel="stylesheet">
    </head>
+
    <body>
       <header class="navbar navbar-expand-lg navbar-light ">
           <h1>
@@ -35,67 +36,68 @@
             </ul>
           </div>
       </header>
+
+
       <main>
-         <section class="container">
+         <section class="form__contacto">
+            <form name="contact_form" action="sec3response.html" method="POST">
             <h2>Estas a un paso de disfrutar esta experiencia inolvidable!</h2>
             <p> Contactanos y nosotros haremos el resto</p>
-            <div class="main__form__flex py-3">
-               <div class="main__form__flex__div">
-                  <p>Motivo de consulta</p>
-                  <form name="contact_form" action="sec3response.html" method="POST">
-                     <select name="area" required id="form_area">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="container">
+               <div class="contact_form row">
+                  <div class="form_field col-lg-6">
+                     <input class="input-text" type="text" name="nombre" id="form_nombre" required/>
+                     <label for="form_name">Nombre</label>
+                  </div>
+                  <div class="form_field col-lg-6">
+                     <input class="input-text" type="text" name="apellido" id="form_apellido" required/>
+                     <label for="form_name">Apellido</label>
+                  </div>
+                  <div class="form_field col-lg-6">
+                     <input class="input-text" type="email" name="email" id="form_email" required/>
+                     <label for="form_email">Email</label>
+                  </div>
+                  <div class="form_field col-lg-6">
+                     <input class="input-text" type="tel" name="telefono" id="form_telefono"/>
+                     <label for="form_telefono">Telefono</label>
+                  </div>
+                  <div class="col-lg-6">
+                     <span>Motivo de consulta</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                     <select name="area" required id="form_area">
                         <option selected="selected" value="0">Seleccione...</option>
                         <option value="I">Informacion</option>
                         <option value="R">Reserva</option>
                         <option value="CT">Citytours</option>
-                     </select> 
-                     <p>Genero</p>
-                     <input type="radio" name="gender" id="male" value="h" checked="checked">
-                     <label for="male">Hombre</label>
-                     <input type="radio" name="gender" id="mujer" value="m">
-                     <label for="mujer">Mujer</label>
-                     <input type="radio" name="gender" id="other" value="o">
-                     <label for="other">Otro</label>
-                     <br /><br /> 
-                     <label for="form_name">Nombre</label>
-                     <input type="text" name="nombre" id="form_nombre" required placeholder="Fernando"/>&nbsp;&nbsp;&nbsp;
-                     <label for="form_name">Apellido</label>&nbsp;&nbsp;
-                     <input type="text" name="apellido" id="form_apellido" required placeholder="Scodio"/>
-                     <br /><br />
-                     <label for="form_email">Email</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                     <input type="email" name="email" id="form_email" required placeholder="example@email.com"/>&nbsp;&nbsp;&nbsp;&nbsp;
-                     <label for="form_telefono">Telefono</label>
-                     <input type="tel" name="telefono" id="form_telefono" />
-                     <br /><br />
-               </div> 
-               <div class="main__form__flex__div"><br/><br/>
-               <span>¿Como nos conociste?</span>
-               <br /><br />
-               <input type="checkbox" name="facebook" id="form_facebook"/>
-               <label for="form_facebook">Facebook</label>
-               <input type="checkbox" name="instagram" id="form_instagram"  />
-               <label for="form_instagram">Instagram</label>
-               <input type="checkbox" name="web" id="form_web"/>
-               <label for="form_web">Web</label>
-               <input type="checkbox" name="otro" id="form_otro"/>
-               <label for="form_otro">Otro</label>
-               <br /><br />
-               <label for="form_mensaje">Comentario</label>
-               <textarea name="mensaje" id="form_mensaje" rows="3" cols="45"></textarea>
-               <!-- a implementar opcion me lo conto un amigo y ofrecer descuento por mail -->
-               <br /><br />
-               <br /><br />&nbsp;&nbsp;&nbsp;
-               <input type="submit" name="enviar_formulario" value="Enviar Mensaje" />&nbsp;&nbsp;&nbsp;&nbsp;
-               <input type="reset" name="borrar_formulario" value="Borrar Formulario" />
-               </form>
+                     </select>
+                  </div>
+                  <br/><br/>
+                  <div class="col-lg-12">
+                     <span>¿Como nos conociste?</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                     <input type="checkbox" name="facebook" id="form_facebook"/>
+                     <label for="form_facebook">Facebook</label>&nbsp;&nbsp;
+                     <input type="checkbox" name="instagram" id="form_instagram"/>
+                     <label for="form_instagram">Instagram</label>&nbsp;&nbsp;
+                     <input type="checkbox" name="web" id="form_web"/>
+                     <label for="form_web">Web</label>&nbsp;&nbsp;
+                     <input type="checkbox" name="otro" id="form_otro"/>
+                     <label for="form_otro">Otro</label>&nbsp;&nbsp;
+                  </div>
+                  <div class="form_field col-lg-12">
+                     <input class="input-text" type="tel" name="mensaje" id="form_mensaje"/>
+                     <label for="form_telefono">Comentario</label>
+                  </div>
+                  <div class="form_field col-lg-6">
+                     <input class="submit-btn" type="submit" name="" value="submit"/>
+                  </div>
                </div>
             </div>
+         </form>
          </section>
          <br/><br/>
          <hr>
          <p>Mira los comentarios de quienes ya vivieron la experiencia (solo <a href="sec4.html">clickea aqui</a>)</p>
          <hr>
-      </main>    
+      </main>  
       <footer class="navbar">
          <section>
             <div>

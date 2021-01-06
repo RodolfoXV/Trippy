@@ -40,8 +40,7 @@ a {
   font-weight: 600;
 }
 p {
-  color: #ac4b1c;
-  margin-left: 10px;
+  color: #f75252;
   font-size: 1rem;
 
   a {
@@ -49,7 +48,7 @@ p {
   }
 }
 form p {
-  color: #ac2d1c;
+  color: #f75252;
 }
 ul li {
   color: #ffd57e;
@@ -66,22 +65,21 @@ h1 {
     font-family: "Fugaz One", cursive;
   }
   a:hover {
-    color: #ffd57e;
+    color: #ffffff;
     text-shadow: 0 0 0.2em #ff3a3a;
     cursor: pointer;
     font-size: 36px;
-
     text-decoration: none;
     transition: 0.5s ease;
   }
 }
 h2 {
   font-weight: 500;
-  color: #fca652;
+  color: #fa8179;
 }
 h3 {
   font-weight: 500;
-  color: #ac4b1c;
+  color: #fa8179;
   letter-spacing: 1px;
 
   a:hover {
@@ -92,7 +90,7 @@ h3 {
   }
 }
 i {
-  color: #ac4b1c;
+  color: #f75252;
   font-size: 30px;
 }
 nav ul li:hover {
@@ -161,10 +159,10 @@ table {
 }
 .head__flex__white-space {
   display: block;
-  width: 5%;
+  width: 20%;
 }
 
-/** FORMULARIO SEC3________Flexbox----------------Flexbox-----------------Flexbox**/
+/** FORMULARIO SEC3________Flexbox----------------Flexbox-----------------Flexbox*
 .main__form__flex {
   background-image: linear-gradient(rgb(255, 207, 161), rgb(255, 255, 255));
   display: flex;
@@ -178,10 +176,15 @@ table {
   height: auto;
   transition: 2s ease;
 }
+*/
 /** COMENTARIOS SEC4________Flexbox----------------Flexbox-----------------Flexbox**/
 
 .main__comentarios__flex {
-  background-color: rgba(255, 206, 161, 0.529);
+  background: linear-gradient(
+    to bottom,
+    #faaca8,
+    #ddd6f3
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   /**background-image: linear-gradient(rgb(255, 255, 255), rgba(0, 0, 0, 0.041)); **/
   display: flex;
   flex-flow: row wrap;
@@ -309,7 +312,7 @@ main__servicios__grid__AfterOficeTrip {
     text-shadow: 0 0 0.2em #000000;
   }
   h3 {
-    background-color: #ffffff95;
+    background-color: #ffffffdb;
     font-size: 2rem;
     font-weight: 600;
     text-shadow: 0 0 0.2em #ff8636e3;
@@ -381,4 +384,70 @@ main__servicios__grid__AfterOficeTrip {
       background-color: darken(#ff4848, $i * 5);
     }
   }
+}
+/*  Formulario nuevo 
+----------------------------------------------------*/
+.form__contacto {
+  max-width: 800px;
+  margin: 50px auto;
+  position: relative;
+  padding: 30px;
+
+  h2 {
+    text-align: center;
+    letter-spacing: 0px;
+    font-size: 3em;
+    line-height: 48px;
+    padding-bottom: 20px;
+    color: #5543ca;
+    background: linear-gradient(to right, #f4534d, #7165c2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.contact_form .form-field {
+  position: relative;
+  margin: 32px 0;
+}
+.contact_form .input-text {
+  display: block;
+  width: 100%;
+  height: 36px;
+  border-width: 0 0 2px 0;
+  border-color: #a087f2;
+  font-size: 1.2rem;
+  line-height: 26px;
+  font-weight: 400;
+}
+.contact_form .input-text:focus + .label,
+.contact_form .input-text.not-empty + .label {
+  transform: translateY(-24px);
+}
+.contact_form .input-text:focus {
+  outline: none;
+}
+.contact_form .label {
+  position: absolute;
+  left: 20px;
+  bottom: 11px;
+  font-size: 1.2rem;
+  line-height: 26px;
+  font-weight: 400;
+  color: #a087f2;
+  cursor: text;
+  text-transform: capitalize;
+  transition: transform 0.2s ease-in-out;
+}
+.contact_form .submit-btn {
+  display: inline-block;
+  background-image: linear-gradient(125deg, #ddd6f3, #faaca8);
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  width: 200px;
+  cursor: pointer;
 }
