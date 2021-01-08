@@ -41,11 +41,14 @@ footer {
 }
 a {
   text-decoration: none;
-  color: #ac4b1c;
+  color: #f75252;
   font-weight: 600;
 }
-p {
+.nav--selected {
   color: #f75252;
+}
+p {
+  color: #ba4343;
   font-size: 1rem;
 
   a {
@@ -56,7 +59,7 @@ form p {
   color: #f75252;
 }
 ul li {
-  color: #ffd57e;
+  color: #f75252;
   list-style-type: none;
   padding: 2px;
   padding-left: 10px;
@@ -89,9 +92,9 @@ h3 {
   letter-spacing: 1px;
 
   a:hover {
-    color: #f18900;
+    color: #f75252;
     cursor: pointer;
-    text-shadow: 0 0 0.2em #fca652;
+    text-shadow: 0 0 0.1em #ff9191;
     text-decoration: none;
   }
 }
@@ -107,9 +110,10 @@ nav ul li:hover {
 nav a i {
   padding-left: 20px;
   transition: 1s ease;
+  text-decoration: none;
 }
 nav a i:hover {
-  color: #ffd57e;
+  color: #ffffff;
   text-shadow: 0 0 0.1em #ff0000a9;
   cursor: pointer;
   font-size: 40px;
@@ -321,7 +325,6 @@ main__servicios__grid__AfterOficeTrip {
     background-color: #ffffffdb;
     font-size: 2rem;
     font-weight: 600;
-    text-shadow: 0 0 0.2em #ff8636e3;
   }
 }
 /* Since positioning the image, we need to help out the caption */
@@ -450,6 +453,22 @@ main__servicios__grid__AfterOficeTrip {
   padding: 0.5rem 1rem;
   border: none;
   width: 200px;
+  cursor: pointer;
+}
+.contact_form .submit-btn:hover {
+  text-shadow: 0 0 0.9em #ffffff;
+  background-image: linear-gradient(125deg, #bbaaf0, #f78a85);
+}
+.contact_form .submit-select {
+  display: inline-block;
+  background-image: linear-gradient(125deg, #ddd6f3, #faaca8);
+  color: #000000;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  width: 160px;
+  height: 50px;
   cursor: pointer;
 }
 .contact_form .input-text:focus + .label,
