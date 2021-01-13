@@ -44,9 +44,6 @@ a {
   color: #f75252;
   font-weight: 600;
 }
-.nav--selected {
-  color: #f75252;
-}
 p {
   color: #ba4343;
   font-size: 1rem;
@@ -84,7 +81,7 @@ h1 {
 }
 h2 {
   font-weight: 500;
-  color: #fa8179;
+  color: #f75252;
 }
 h3 {
   font-weight: 500;
@@ -99,8 +96,9 @@ h3 {
   }
 }
 i {
-  color: #f75252;
+  color: #ff5448;
   font-size: 30px;
+  text-decoration: none;
 }
 nav ul li:hover {
   text-shadow: 0 0 0.2em #ff26008f;

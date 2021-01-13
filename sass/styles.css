@@ -97,7 +97,7 @@ h1 a:hover {
 
 h2 {
   font-weight: 500;
-  color: #fa8179;
+  color: #f75252;
 }
 
 h3 {
@@ -114,8 +114,9 @@ h3 a:hover {
 }
 
 i {
-  color: #f75252;
+  color: #ff5448;
   font-size: 30px;
+  text-decoration: none;
 }
 
 nav ul li:hover {
