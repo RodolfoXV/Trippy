@@ -188,12 +188,14 @@ table {
 /** COMENTARIOS SEC4________Flexbox----------------Flexbox-----------------Flexbox**/
 
 .main__comentarios__flex {
+  /*
   background: linear-gradient(
     to bottom,
     #faaca8,
     #ddd6f3
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   /**background-image: linear-gradient(rgb(255, 255, 255), rgba(0, 0, 0, 0.041)); **/
+
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
@@ -314,10 +316,11 @@ main__servicios__grid__AfterOficeTrip {
 .carousel {
   margin-bottom: 4rem;
   p {
-    color: #ececec;
+    color: #ffffff;
     font-size: 1.5rem;
     font-weight: 600;
-    text-shadow: 0 0 0.2em #000000;
+    text-shadow: 0 0 1em #2e0808;
+    background-color: #ff545441;
   }
   h3 {
     background-color: #ffffffdb;
@@ -341,9 +344,12 @@ main__servicios__grid__AfterOficeTrip {
   left: 0;
   min-width: 100%;
   height: 19rem;
+  object-fit: cover;
+  height: 300px !important;
+  width: 350px;
 }
 .carousel-estile {
-  border-radius: 7px;
+  border-radius: 10px;
 }
 
 /* RESPONSIVE CSS
