@@ -792,4 +792,12 @@ main__servicios__grid__AfterOficeTrip {
   -webkit-transform: translateY(-24px);
           transform: translateY(-24px);
 }
+
+.videoContainer {
+  height: 100%;
+  left: 0;
+  position: relative;
+  top: 0;
+  width: 100%;
+}
 /*# sourceMappingURL=styles.css.map */
