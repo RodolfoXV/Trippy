@@ -98,7 +98,6 @@ h3 {
 i {
   color: #ff5448;
   font-size: 30px;
-  text-decoration: none;
 }
 nav ul li:hover {
   text-shadow: 0 0 0.2em #ff26008f;
@@ -108,7 +107,6 @@ nav ul li:hover {
 nav a i {
   padding-left: 20px;
   transition: 1s ease;
-  text-decoration: none;
 }
 nav a i:hover {
   color: #ffffff;
@@ -485,4 +483,25 @@ main__servicios__grid__AfterOficeTrip {
   position: relative;
   top: 0;
   width: 100%;
+}
+.btn-wsp {
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  bottom: 400px;
+  right: 150px;
+  background: #ffb8b890;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  z-index: 400;
+}
+.btn-wsp :hover {
+  color: #ffffff;
+  text-shadow: 0 0 0.2em #ff26008f;
+}
+.non-underline-link {
+  text-decoration: none !important;
 }
